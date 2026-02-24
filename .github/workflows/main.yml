@@ -20,9 +20,9 @@ jobs:
 
       - name: Run
         run: |
-          npm ci
-          npm run build
-      
+          sudo apt-get install -y wkhtmltopdf
+          wkhtmltopdf --page-size A4 cv.html cv.pdf
+
       - uses: actions/upload-artifact@v6
         with:
           name: cv
