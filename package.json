@@ -1,0 +1,21 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "moje cv",
+  "scripts": {
+    "build": "wkhtmltopdf --page-size A4 cv.html cv.pdf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slowikowskiarkadiusz/cv.git"
+  },
+  "author": "Arkadiusz Słowikowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slowikowskiarkadiusz/cv/issues"
+  },
+  "homepage": "https://github.com/slowikowskiarkadiusz/cv#readme",
+  "devDependencies": {
+    "wkhtmltopdf": "^0.4.0"
+  }
+}

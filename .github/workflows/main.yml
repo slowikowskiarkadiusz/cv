@@ -18,10 +18,10 @@ jobs:
         with:
           node-version: "20.x"
 
-      - name: Run 
+      - name: Run
         run: |
-          sudo npm install --global wkhtmltopdf 
-          wkhtmltopdf --page-size A4 cv.html cv.pdf
+          npm i
+          npm run build
       
       - uses: actions/upload-artifact@v6
         with:
