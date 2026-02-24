@@ -30,6 +30,6 @@ jobs:
           path: Slowikowski_Arkadiusz_Resume.pdf
 
       - name: Create Release
-        run: gh release create latest Slowikowski_Arkadiusz_Resume.pdf --title "${{  github.ref_name }}" --notes "" --latest
+        run: gh release create Slowikowski_Arkadiusz_Resume.pdf --title "${{  github.ref_name }}" --notes ""
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
