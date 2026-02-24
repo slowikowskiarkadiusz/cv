@@ -22,14 +22,14 @@ jobs:
       - name: Run
         run: |
           sudo apt-get install -y --fix-missing wkhtmltopdf || true
-          wkhtmltopdf --page-size A4 cv.html cv.pdf
+          wkhtmltopdf --page-size A4 cv.html Slowikowski_Arkadiusz_Resume.pdf
 
       - uses: actions/upload-artifact@v6
         with:
           name: cv
-          path: cv.pdf
+          path: Slowikowski_Arkadiusz_Resume.pdf
 
       - name: Create Release
-        run: gh release create latest cv.pdf --title "cv" --notes "" --latest
+        run: gh release create latest Slowikowski_Arkadiusz_Resume.pdf --title "cv" --notes "" --latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
