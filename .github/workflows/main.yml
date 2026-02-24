@@ -5,7 +5,8 @@ on:
     branches:
       - main
 
-permissions: read-all
+permissions:
+  contents: write
 
 jobs:
   build-and-publish:
@@ -27,3 +28,8 @@ jobs:
         with:
           name: cv
           path: cv.pdf
+
+      - name: Create Release
+        run: gh release create latest cv.pdf --title "cv" --notes "" --latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
