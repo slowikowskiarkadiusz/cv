@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - uses: actions/setup-node@6
+      - uses: actions/setup-node@v6
         with:
           node-version: "20.x"
 
@@ -23,7 +23,7 @@ jobs:
           sudo npm install --global wkhtmltopdf 
           wkhtmltopdf --page-size A4 cv.html cv.pdf
       
-      - uses: actions/upload-artifact@6
+      - uses: actions/upload-artifact@v6
         with:
           name: cv
           path: cv.pdf
