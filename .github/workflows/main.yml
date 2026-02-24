@@ -20,7 +20,7 @@ jobs:
 
       - name: Run
         run: |
-          sudo apt-get install -y wkhtmltopdf
+          sudo apt-get install -y --fix-missing wkhtmltopdf || true
           wkhtmltopdf --page-size A4 cv.html cv.pdf
 
       - uses: actions/upload-artifact@v6
