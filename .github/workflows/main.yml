@@ -2,8 +2,8 @@ name: Build a pdf
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - 'v*'
 
 permissions:
   contents: write
@@ -30,6 +30,6 @@ jobs:
           path: Slowikowski_Arkadiusz_Resume.pdf
 
       - name: Create Release
-        run: gh release create latest Slowikowski_Arkadiusz_Resume.pdf --title "cv" --notes "" --latest
+        run: gh release create latest Slowikowski_Arkadiusz_Resume.pdf --title "${{  github.ref_name }}"" --notes "" --latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
