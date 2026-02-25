@@ -1,208 +1,222 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8" />
         <style>
             body {
-                padding: 35px;
-                height: 29.7cm !important;
-                width: 24cm !important;
-                /* border: solid 1px blue; */
-                font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-                font-weight: 300;
-                font-size: 17px;
+                padding: 40px 50px;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                color: #000;
+                max-width: 800px;
+                margin: 0 auto;
             }
 
-            table {
-                width: 110%;
-                border-collapse: collapse;
-                font-size: 1.06em;
+            h1 {
+                margin: 0 0 4px 0;
+                font-size: 26px;
             }
 
-            th {
-                text-align: left;
+            .contact {
+                margin-bottom: 16px;
+                font-size: 13px;
+            }
+
+            .summary {
+                margin-bottom: 20px;
+                line-height: 1.5;
+            }
+
+            h2 {
                 color: #0032d8;
+                border-bottom: 1px solid #0032d8;
+                padding-bottom: 4px;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                font-size: 15px;
+                text-transform: uppercase;
+            }
+
+            .job {
+                margin-bottom: 16px;
+            }
+
+            .job-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+            }
+
+            .job-company {
                 font-weight: bold;
-                padding-top: 20px;
-                padding-bottom: 20px;
-            }
-
-            .pless {
-                margin: 0;
-            }
-
-            .padded {
-                padding-left: 25px;
-                padding-right: 25px;
-            }
-
-            .skill-set {
-                vertical-align: top;
-                min-height: 0%;
-            }
-
-            .skill-title {
-                color: #0032d8;
-                margin-bottom: 5px;
-            }
-
-            .job-title {
-                font-weight: normal;
+                font-size: 14px;
             }
 
             .job-date {
                 font-style: italic;
+                font-size: 12px;
+                color: #444;
             }
 
-            .skill {
-                padding: 2px 6px;
-                border-radius: 5px;
-                margin: 2px;
-                display: inline-block;
-                border: 1px #3a5ac2 solid;
+            .job-title {
+                font-size: 13px;
+                color: #333;
+                margin: 2px 0 6px 0;
+            }
+
+            ul {
+                margin: 4px 0;
+                padding-left: 20px;
+            }
+
+            li {
+                margin-bottom: 3px;
+                line-height: 1.5;
+            }
+
+            .skills-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 8px 30px;
+            }
+
+            .skill-group {
+                margin-bottom: 6px;
+            }
+
+            .skill-label {
+                font-weight: bold;
+                color: #0032d8;
+                font-size: 12px;
+                text-transform: uppercase;
+                margin-bottom: 2px;
+            }
+
+            .skill-values {
+                font-size: 13px;
+            }
+
+            .edu-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
             }
         </style>
     </head>
 
     <body>
-        <table>
-            <tr>
-                <td colspan="2" class="padded">
-                    <h1>Arkadiusz Słowikowski</h1>
-                    <p class="pless"><b>+48 790 888 973</b></p>
-                    <p class="pless"><b>slowikowskiarkadiusz@gmail.com</b></p>
-                </td>
-            </tr>
-            <tr>
-                <th class="padded">EXPERIENCE</th>
-                <th class="padded">SKILLS</th>
-            </tr>
-            <tr>
-                <td class="padded" style="vertical-align: top">
-                    <span class="job">
-                        <h3 class="job-company pless">Bayer Digital Hub, Warsaw</h3>
-                        <p class="job-title pless">- Senior Software Engineer (JANURAY 2024 - PRESENT)</p>
-                        <ul>
-                            <li>Developing backend and frontend modules using Webpack Module Federation</li>
-                            <li>Making architectural decisions for distributed frontend/backend systems</li>
-                            <li>Deploying and managing applications on Microsoft Azure</li>
-                            <li>Onboarding internal developers</li>
-                            <li>Collaborating with UX designers to shape application user experience</li>
-                            <li>Creating technical documentation for external developers</li>
-                            <li>Onboarding and supporting external developers</li>
-                        </ul>
-                    </span>
-                    <span class="job">
-                        <h3 class="job-company pless">Netcompany, Warsaw</h3>
-                        <p class="job-title pless">- Senior Architect (JANURAY 2023 - DECEMBER 2023)</p>
-                        <p class="job-title pless">- .NET Consultant (NOVEMBER 2019 - DECEMBER 2022)</p>
-                        <ul>
-                            <li>Led the process of developing a website from the scratch using Angular and .NET, as well as developed deployment pipelines</li>
-                            <li>Designed & developed microservices applications based on Azure technologies</li>
-                            <li>Designed & developed libraries used by multitude of people, and conducted workshops about them</li>
-                            <li>Created relevant user and technical documentation</li>
-                            <li>Onboarded and took care of new company/project memeber</li>
-                            <li>Day-to-day contact with a client - during stand-ups, planning sessions, spontaneous meetings etc.</li>
-                        </ul>
-                    </span>
-                    <span class="job padded">
-                        <h3 class="job-company pless">DISCO:VR, Warsaw</h3>
-                        <p class="job-title pless">- Unity/C# & Unreal Engine Developer (JULY 2018 - NOVEMBER 2019)</p>
-                        <ul>
-                            <li>Developed desktop/VR games with Unity Engine/C# and Unreal Engine 4</li>
-                            <li>Developed embedded software in C++ for a VR Treadmill and an algorithm detecting movement of a player basing on his legs' movements</li>
-                        </ul>
-                    </span>
-                    <span class="job padded">
-                        <h3 class="job-company pless">Central Institute for Labour Protection - National Research Institute, Warsaw</h3>
-                        <p class="job-title pless">- Unity/C# Developer (OCTOBER 2017 - JULY 2018)</p>
-                        <ul>
-                            <li>Developed several VR training simulators (with Unity Engine/C#) for industrial machinery like crane or gantry which put a lot of attention to realistic physics of the environment</li>
-                        </ul>
-                    </span>
-                </td>
-                <td class="padded" style="vertical-align: top; width: 400px">
-                    <span class="skill-set">
-                        <p class="skill-title" style="margin-top: 0">MAIN LANGUAGES</p>
-                        <span class="skill">C#</span>
-                        <span class="skill">TypeScript</span>
-                    </span>
-                    <span class="skill-set">
-                        <p class="skill-title">BACKEND</p>
-                        <span class="skill">.NET Core 3+</span>
-                        <span class="skill">ASP.NET Web Api</span>
-                        <span class="skill">Azure Functions</span>
-                    </span>
-                    <span class="skill-set">
-                        <p class="skill-title">FRONTEND</p>
-                        <span class="skill">Angular 8+</span>
-                        <span class="skill">JavaScript</span>
-                        <span class="skill">HTML</span>
-                        <span class="skill">CSS/SCSS</span>
-                        <span class="skill">React</span>
-                        <span class="skill">Bootstrap</span>
-                    </span>
-                    <span class="skill-set">
-                        <p class="skill-title">UNIT TESTING</p>
-                        <span class="skill">Moq</span>
-                        <span class="skill">NUnit</span>
-                    </span>
-                    <span class="skill-set">
-                        <p class="skill-title">DATABASE</p>
-                        <span class="skill">EntityFramework</span>
-                        <span class="skill">MSSQL</span>
-                        <span class="skill">NoSQL</span>
-                        <span class="skill">CosmosDB</span>
-                    </span>
-                    <span class="skill-set">
-                        <p class="skill-title">MISCELLANEOUS</p>
-                        <span class="skill">Azure</span>
-                        <span class="skill">Bicep</span>
-                        <span class="skill">Git</span>
-                        <span class="skill">PowerShell</span>
-                        <span class="skill">Unity Engine</span>
-                        <span class="skill">Unreal Engine 4</span>
-                        <span class="skill">VR</span>
-                        <span class="skill">AR</span>
-                    </span>
-                    <span class="skill-set">
-                        <p class="skill-title">LANGUAGES</p>
-                        <span class="skill">Polish</span>
-                        <span class="skill">English</span>
-                    </span>
-                </td>
-            </tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr>
-                <!-- <th colspan="2" style="padding-top:0;"> -->
-                <th colspan="2">EDUCATION</th>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <span class="job">
-                        <span class="job-title">BEng in Computer Science</span>
-                        <span class="job-company">Warsaw University of Life Sciences</span>
-                        <span class="job-date">OCTOBER 2015 - JULY 2019</span>
-                        <ul>
-                            <li>Thesis: Application of machine learning in development of a bot's efficiency in a computer game</li>
-                        </ul>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <!-- <th colspan="2" style="padding-top:0;"> -->
-                <th colspan="2">GitHub</th>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <span class="job">
-                        <a href="https://github.com/slowikowskiarkadiusz">https://github.com/slowikowskiarkadiusz</a>
-                    </span>
-                </td>
-            </tr>
-        </table>
+        <h1>Arkadiusz Słowikowski</h1>
+        <div class="contact">
+            Warsaw, Poland &nbsp;|&nbsp; +48 790 888 973 &nbsp;|&nbsp; slowikowskiarkadiusz@gmail.com &nbsp;|&nbsp;
+            <a href="https://github.com/slowikowskiarkadiusz">github.com/slowikowskiarkadiusz</a> &nbsp;|&nbsp;
+            <a href="https://linkedin.com/in/slowikowskiarkadiusz">linkedin.com/in/slowikowskiarkadiusz</a>
+        </div>
+
+        <div class="summary">
+            Senior Software Engineer with 7+ years of experience in full-stack development, microservices architecture, and cloud solutions on Microsoft Azure. Proficient in C#, .NET Core, TypeScript, and Angular. Experienced in CI/CD pipelines, distributed systems, REST APIs, and developer onboarding. Currently expanding into systems programming through self-directed learning of Rust.
+        </div>
+
+        <h2>Experience</h2>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-company">Bayer Digital Hub, Warsaw</span>
+                <span class="job-date">January 2024 – Present</span>
+            </div>
+            <div class="job-title">Senior Software Engineer</div>
+            <ul>
+                <li>Architected and developed backend and frontend modules using Webpack Module Federation for distributed micro-frontend systems</li>
+                <li>Made architectural decisions for distributed frontend/backend systems deployed on Microsoft Azure</li>
+                <li>Managed and maintained cloud infrastructure and application deployments on Azure</li>
+                <li>Created technical documentation and onboarded both internal and external developers</li>
+                <li>Collaborated with UX designers to define and improve application user experience</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-company">Netcompany, Warsaw</span>
+                <span class="job-date">November 2019 – December 2023</span>
+            </div>
+            <div class="job-title">Senior Architect (January 2023 – December 2023) | .NET Consultant (November 2019 – December 2022)</div>
+            <ul>
+                <li>Led end-to-end development of a greenfield web application using Angular and .NET, including CI/CD deployment pipelines</li>
+                <li>Designed and developed microservices architecture using Azure technologies (Azure Functions, CosmosDB, Service Bus)</li>
+                <li>Built internal libraries used across multiple teams and conducted technical workshops for developers</li>
+                <li>Served as primary client contact during stand-ups, sprint planning, and ad-hoc meetings</li>
+                <li>Authored user and technical documentation; onboarded new team members</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-company">DISCO:VR, Warsaw</span>
+                <span class="job-date">July 2018 – November 2019</span>
+            </div>
+            <div class="job-title">Unity/C# & Unreal Engine Developer</div>
+            <ul>
+                <li>Developed desktop and VR games using Unity Engine (C#) and Unreal Engine 4</li>
+                <li>Built embedded C++ software for a VR treadmill including a custom movement-detection algorithm based on leg tracking</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-company">Central Institute for Labour Protection – National Research Institute, Warsaw</span>
+                <span class="job-date">October 2017 – July 2018</span>
+            </div>
+            <div class="job-title">Unity/C# Developer</div>
+            <ul>
+                <li>Developed VR training simulators for industrial machinery (crane, gantry) with high-fidelity physics using Unity Engine and C#</li>
+            </ul>
+        </div>
+
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-group">
+                <div class="skill-label">Languages</div>
+                <div class="skill-values">C#, TypeScript, JavaScript, C++</div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-label">Backend</div>
+                <div class="skill-values">.NET / .NET Core, ASP.NET Web API, Azure Functions, REST API, Microservices</div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-label">Frontend</div>
+                <div class="skill-values">Angular 8+, React, HTML, CSS/SCSS, Bootstrap, Webpack Module Federation</div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-label">Cloud & DevOps</div>
+                <div class="skill-values">Microsoft Azure, Azure Bicep, CI/CD Pipelines, PowerShell</div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-label">Databases</div>
+                <div class="skill-values">MSSQL, CosmosDB, NoSQL, Entity Framework</div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-label">Testing & Tools</div>
+                <div class="skill-values">NUnit, Moq, Git</div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-label">Other</div>
+                <div class="skill-values">VR/AR development</div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-label">Human Languages</div>
+                <div class="skill-values">Polish (native), English (professional)</div>
+            </div>
+        </div>
+
+        <h2>Education</h2>
+        <div class="job">
+            <div class="edu-header">
+                <span class="job-company">Warsaw University of Life Sciences</span>
+                <span class="job-date">October 2015 – July 2019</span>
+            </div>
+            <div class="job-title">BEng in Computer Science</div>
+            <ul>
+                <li>Thesis: Application of machine learning in development of a bot's efficiency in a computer game</li>
+            </ul>
+        </div>
     </body>
 </html>
